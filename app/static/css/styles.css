@@ -910,7 +910,7 @@ textarea {
   display: none;
 }
 
-.song-card:hover > .song-actions {
+.song-card:hover .song-actions {
   display: flex;
 }
 
