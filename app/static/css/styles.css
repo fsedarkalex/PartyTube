@@ -910,9 +910,12 @@ textarea {
   display: none;
 }
 
-.song-card:hover .song-actions {
+/* Show contros on hovered elements and on the admin currently playing view */
+.song-card:hover .song-actions,
+  #admin-current-song .song-actions {
   display: flex;
 }
+
 
 .song-chip-row {
   margin-top: 0.48rem;
