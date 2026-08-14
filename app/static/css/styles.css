@@ -2291,7 +2291,7 @@ body::before {
   }
 
   .song-card {
-    grid-template-columns: 4.35rem minmax(0, 1fr);
+    grid-template-columns: 0 minmax(0, 1fr);
     border-radius: 16px;
   }
 
