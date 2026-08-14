@@ -228,8 +228,7 @@ function songCard(song, options = {}) {
   const completedAt = song.completedAt || song.playedAt || song.skippedAt || song.removedAt;
 
   return `
-    <article class="song-card ${options.highlight ? "highlight" : ""}" data-song-id="${song.id}">
-      <img class="song-thumb" src="${escapeHtml(song.thumbnailUrl)}" alt="Thumbnail von ${escapeHtml(song.title)}" loading="lazy">
+    <article class="song-card ${options.highlight ? "highlight" : ""}" style="linear-gradient(to right, transparent 12%, var(--color-surface) 30% ) left / cover, url('${escapeHtml(song.thumbnailUrl)}') -90px -30px / 350px no-repeat" alt="Thumbnail von ${escapeHtml(song.title)}" data-song-id="${song.id}">
       <div class="song-meta">
         <div class="song-line">
           <h3>${escapeHtml(song.title)}</h3>

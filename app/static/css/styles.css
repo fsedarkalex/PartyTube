@@ -835,38 +835,29 @@ textarea {
 
 .song-card {
   display: grid;
-  grid-template-columns: 5.9rem minmax(0, 1fr);
+  grid-template-columns: 9rem minmax(0, 1fr);
   gap: var(--space-3);
   align-items: center;
   padding: 0.86rem;
   border: 1px solid rgba(255, 255, 255, 0.095);
   border-radius: 20px;
-  background:
-    linear-gradient(140deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025)),
-    rgba(255, 255, 255, 0.035);
+  background-position-x: left, -90px;
+  background-position-y: center, -30px;
+  background-size: cover, 350px;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
 .song-card:hover {
   transform: translateY(-2px);
   border-color: rgba(242, 58, 67, 0.35);
-  background:
+  /*background:
     linear-gradient(140deg, rgba(215, 29, 42, 0.11), rgba(255, 255, 255, 0.045)),
-    rgba(255, 255, 255, 0.04);
+    rgba(255, 255, 255, 0.04);*/
 }
 
 .song-card.highlight {
   border-color: rgba(242, 58, 67, 0.45);
   box-shadow: 0 18px 48px rgba(215, 29, 42, 0.18);
-}
-
-.song-thumb {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  border-radius: 15px;
-  background: #111;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.34);
 }
 
 .song-meta {
@@ -1439,10 +1430,6 @@ body[data-page="player"] .player-control-dock .danger-button {
   min-height: 17rem;
 }
 
-.screen-current .song-thumb {
-  border-radius: 28px;
-}
-
 .screen-current .song-line h3 {
   font-size: clamp(1.55rem, 3vw, 3rem);
 }
@@ -1738,8 +1725,19 @@ body[data-page="player"] .player-control-dock .danger-button {
   }
 
   .song-card {
-    grid-template-columns: 4.8rem minmax(0, 1fr);
+    grid-template-columns: 0 minmax(0, 1fr);
     gap: 0.72rem;
+    background-position-x: -70%, center;
+    background-position-y: center, center;
+    background-size: 300%, 180%;
+  }
+
+  .song-meta: {
+    background: linear-gradient(to right, transparent 1%, var(--color-surface) 15%);
+    padding-left: 5rem;
+    padding-top: 0.75rem;
+    margin-top: -1rem;
+    opacity: 0.75;
   }
 
   .song-line {
@@ -2517,10 +2515,6 @@ body[data-page="party-screen"] .screen-link {
 .song-card {
   padding: 0.64rem;
   border-radius: 15px;
-}
-
-.song-thumb {
-  border-radius: 12px;
 }
 
 .eyebrow {
@@ -3612,10 +3606,6 @@ body::before {
   gap: 0.72rem;
   padding: 0.68rem;
   border-radius: 16px;
-}
-
-.song-thumb {
-  border-radius: 11px;
 }
 
 .song-line h3 {
