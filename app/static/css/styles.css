@@ -2412,9 +2412,11 @@ body[data-page="start"] .alert-card p {
   line-height: 1.35;
 }
 
+/* IMHO not needed but causes a weitrd shifting issue
 body[data-page="guest"] .lower-grid:last-of-type {
   grid-template-columns: minmax(0, 0.72fr);
 }
+*/
 
 body[data-page="guest"] .compact-qr-panel {
   max-width: 44rem;
