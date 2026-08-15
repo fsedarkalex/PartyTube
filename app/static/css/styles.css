@@ -900,15 +900,18 @@ textarea {
 
 .song-actions {
   display: none;
-  flex-wrap: wrap;
-  gap: 0.45rem;
+  position: absolute;
+  bottom: 0.5rem;
+  background-color: var(--color-surface-2);
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 
 /* Show controls on hover as well as admin currently playing */
 .song-card:hover .song-actions,
   #admin-current-song .song-actions {
-  display: flex;
+  display: block;
 }
 
 .song-chip-row {
@@ -1752,7 +1755,7 @@ body[data-page="player"] .player-control-dock .danger-button {
   /* Show controls on hover as well as admin currently playing */
   .song-card:hover .song-actions,
   #admin-current-song .song-actions {
-    display: grid;
+    display: block;
   }
 
   .chip-button {
@@ -3619,10 +3622,6 @@ body::before {
 
 .song-subline {
   font-size: 0.82rem;
-}
-
-.song-actions {
-  margin-top: 0.55rem;
 }
 
 .primary-button,
