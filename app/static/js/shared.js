@@ -228,7 +228,7 @@ function songCard(song, options = {}) {
   const completedAt = song.completedAt || song.playedAt || song.skippedAt || song.removedAt;
 
   return `
-    <article class="song-card ${options.highlight ? "highlight" : ""}" style="background-image: linear-gradient(to right, transparent 12%, var(--color-surface) 30% ), url('${escapeHtml(song.thumbnailUrl)}')" alt="Thumbnail von ${escapeHtml(song.title)}" data-song-id="${song.id}">
+    <article class="song-card ${options.highlight ? "highlight" : ""}" style="background-image: linear-gradient(to right, transparent 8%, var(--color-surface) 20% ), url('${escapeHtml(song.thumbnailUrl)}')" alt="Thumbnail von ${escapeHtml(song.title)}" data-song-id="${song.id}">
       <div class="song-spacer-left"></div>
       <div class="song-meta">
         <div class="song-line">
