@@ -2733,9 +2733,11 @@ body[data-page="start"] .compact-start-more {
     font-size: clamp(1.95rem, 9vw, 2.42rem);
   }
 
+  /* IMHO not needed but causes a weitrd shifting issue
   body[data-page="guest"] .lower-grid:last-of-type {
     grid-template-columns: 1fr;
   }
+  */
 
   body[data-page="start"] .alert-stack {
     grid-template-columns: 1fr;
@@ -3831,5 +3833,9 @@ body[data-page="start"] .start-actions-grid {
     position: static;
     width: 100%;
     margin-top: 0.72rem;
+  }
+
+  .song-card {
+    grid-template-columns: 0 minmax(0, 1fr);
   }
 }
