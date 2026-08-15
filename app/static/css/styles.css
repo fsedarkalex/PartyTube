@@ -885,6 +885,10 @@ textarea {
   font-size: 0.86rem;
 }
 
+.song-subline-secondary {
+  display: none;
+}
+
 .dot-sep::before {
   content: "•";
   margin: 0 0.44rem;
@@ -910,6 +914,7 @@ textarea {
 
 /* Show controls on hover as well as admin currently playing */
 .song-card:hover .song-actions,
+.song-card:hover .song-subline-secondary,
   #admin-current-song .song-actions {
   display: block;
 }

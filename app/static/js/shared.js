@@ -247,7 +247,7 @@ function songCard(song, options = {}) {
         ${completedAt ? `<p class="song-subline">${escapeHtml(song.statusLabel || "Abgeschlossen")} ${relativeTime(completedAt)}</p>` : ""}
         ${
           song.readdedFromSongId
-            ? `<p class="song-subline">erneut hinzugefügt aus Verlauf #${escapeHtml(song.readdedFromSongId)}</p>`
+            ? `<p class="song-subline song-subline-secondary">erneut hinzugefügt aus Verlauf #${escapeHtml(song.readdedFromSongId)}</p>`
             : ""
         }
         <div class="song-actions">
