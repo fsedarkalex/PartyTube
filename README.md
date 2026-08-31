@@ -73,10 +73,17 @@ Windows PowerShell:
 7. Die exportierte Datei `artifacts/certs/partytube-local-root.crt` auf Android-Geräten als vertrauenswürdige CA installieren.
 8. Danach `https://party.lokal` im Browser neu öffnen.
 
+
 ### Portainer
 
 Das Projekt ist kompatibel mit Portainer und wahrscheinlich auch anderen compose/swarm plattformen.
 Damit die Umgebungsvariablen korrekt geladen werden, muss eine Variable `ENV_FILE` mit dem Wert `stack.env` eingetragen werden.
+
+### Gast-App und YouTube-Teilen
+
+- Android/Chrome: PartyTube öffnen, `App installieren` wählen und danach einen YouTube-Link direkt an PartyTube teilen. Der Song wird nach der serverseitigen Linkprüfung eingereicht.
+- iPhone/Safari: `Teilen` und `Zum Home-Bildschirm` wählen. Da iOS Web-Apps nicht als Web Share Target registriert, in YouTube `Link kopieren` und in PartyTube `Link einfügen` tippen.
+- Installation und Android Share Target benötigen eine vom Gerät als vertrauenswürdig erkannte HTTPS-Verbindung.
 
 ### Warum dieser Weg?
 
